@@ -8,18 +8,19 @@ body {
 .header-mobile {
   background-image: url('./img/shape.png');
   background-repeat: no-repeat;
-  width: 375px;
+  min-width: 375px;
   height: 718px;
   background-color: white;
-  z-index: inherit;
+  padding: 15px;
 }
 
 /* nav */
-nav {
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 0px;
+  padding-top: 20px;
 }
 
 .logo {
@@ -32,8 +33,11 @@ nav {
   letter-spacing: 0;
   text-align: center;
 }
+.logo a {
+  text-decoration: none;
+}
 
-.menu a {
+.menu nav {
   text-decoration: none;
   margin-right: 16px;
   color: #6070ff;
@@ -82,7 +86,11 @@ nav {
 .connection {
   align-self: flex-start;
 }
-
+.connection a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
 .connect-header {
   color: #7f8cff;
   text-align: left;
@@ -97,6 +105,9 @@ nav {
   margin-bottom: 15px;
 }
 
+.social-links li {
+  list-style: none;
+}
 .social-links a {
   color: #505f79;
 }
