@@ -26,7 +26,7 @@
 
 # 📖 'My Portfolio project <a name="about-project"></a>
 
-**My portfolio** is a project based on first mobile structure and it is first section of my portfolio
+**My portfolio** is a project based on first mobile structure and it is complete portfolio with even desktop responsive version.
 
 ## 🛠 Built With <a name="built-with"></a>
 
