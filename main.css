@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 @media (min-width: 376px) {
   body {
     background-color: #ddd;
@@ -321,6 +322,7 @@
   .contact-card {
     background-color: #fbf8f8;
   }
+
   .contact {
     background-image: url('./img/contact-shapes.png');
     background-size: cover;
@@ -335,12 +337,14 @@
     border-top-left-radius: 100px;
     font-family: 'Poppins', sans-serif;
   }
+
   .contact-header {
     margin-top: 80px;
     font-size: 40px;
     color: #fff;
     font-weight: 700;
   }
+
   .contact-p {
     margin: 60px 20px 30px;
     font-size: 20px;
@@ -349,13 +353,12 @@
     color: #fff;
     font-weight: normal;
   }
+
   .input {
     margin: 10px 0;
     width: 327px;
     height: 48px;
     border-radius: 8px;
-    border: none;
-    text-align: start;
     border: 1px solid #cfd8dc;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -363,6 +366,7 @@
     line-height: 20px;
     color: black;
   }
+
   textarea {
     width: 327px;
     height: 170px;
@@ -373,6 +377,7 @@
     font-family: 'Poppins', sans-serif;
     margin-top: 10px;
   }
+
   .send-btn {
     width: 142px;
     height: 48px;
@@ -385,7 +390,6 @@
     margin-top: 10px;
     margin-left: 20px;
     background-color: white;
-    font-size: 17px;
     font-weight: 500;
     text-align: center;
     color: #396df2;
@@ -393,6 +397,7 @@
     line-height: 24px;
     letter-spacing: 3%;
   }
+
   .send-btn:hover {
     background-color: #081d5182;
     color: white;
