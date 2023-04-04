@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 375px) {
   body {
     background-color: #ddd;
   }
@@ -15,7 +15,8 @@
     align-items: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
-    padding: 15px;
+    /* padding: 15px; */
+    /* width: 375px; */
   }
 
   .header-mobile {
@@ -360,7 +361,7 @@
     height: 48px;
     border-radius: 8px;
     border: 1px solid #cfd8dc;
-    text-align: center;
+    text-align: left;
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
     line-height: 20px;
@@ -371,11 +372,12 @@
     width: 327px;
     height: 170px;
     border-radius: 8px;
-    text-align: center;
+    text-align: left;
     font-size: 17px;
     line-height: 20px;
     font-family: 'Poppins', sans-serif;
     margin-top: 10px;
+    margin-left: 5px;
   }
 
   .send-btn {
