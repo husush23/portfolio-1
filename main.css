@@ -198,10 +198,10 @@ ul li {
   padding-bottom: 10px;
 }
 
-.langs {
+/* .langs {
   display: flex;
   align-items: flex-start;
-}
+} */
 
 .langs ul {
   list-style: none;
@@ -213,6 +213,7 @@ ul li {
   border-radius: 5px;
   text-align: center;
   padding: 2px 5px 2px 5px;
+  float: left;
 }
 
 .langs ul > li {
