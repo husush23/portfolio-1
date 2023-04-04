@@ -199,8 +199,8 @@ ul li {
 }
 
 .langs {
-  display: flex;
-  align-items: flex-start;
+  /* display: flex;
+  align-items: flex-start; */
 }
 
 .langs ul {
@@ -213,6 +213,7 @@ ul li {
   border-radius: 5px;
   text-align: center;
   padding: 2px 5px 2px 5px;
+  float: left;
 }
 
 .langs ul > li {
@@ -271,10 +272,12 @@ ul li {
 }
 
 .languages-header {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 30px; */
+}
+.langs ul {
 }
 
 .languages-header h3 {
