@@ -82,10 +82,10 @@ a {
   line-height: 52px;
   letter-spacing: 0;
   text-align: left;
-  margin-left: 15px;
   color: #172b4d;
   margin-bottom: 0;
   margin-top: 100px;
+  left: 24px;
 }
 
 .explain-self {
@@ -319,32 +319,87 @@ ul li {
 }
 
 /* Contact form */
-.about-p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0;
+.contact-card {
+  background-color: #fbf8f8;
 }
-
-.about input {
+.contact {
+  background-image: url('./img/contact-shapes.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #6070ff;
+  width: 375px;
+  height: 770px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: normal;
+  border-top-left-radius: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+.contact-header {
+  margin-top: 80px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+}
+.contact-p {
+  margin: 60px 20px 30px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+}
+.input {
+  margin: 10px 0;
   width: 327px;
   height: 48px;
   border-radius: 8px;
   border: none;
+  text-align: start;
+  border: 1px solid #cfd8dc;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  color: black;
 }
-
-.about textarea {
+textarea {
   width: 327px;
   height: 170px;
   border-radius: 8px;
-  border: none;
-  background-color: #cfd8dc;
-  padding: 10px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
 }
-
+.send-btn {
+  width: 142px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 20px;
+  background-color: white;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  color: #396df2;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 3%;
+}
+.send-btn:hover {
+  background-color: #081d5182;
+  color: white;
+}
 /* Media queries */
-@media (min-width: 768px) {
+@media (min-width: 768pzx) {
   .header-mobile {
     background-image: url('./img/shape.png');
     background-repeat: no-repeat;
