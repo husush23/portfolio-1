@@ -235,6 +235,12 @@ ul li {
   font-weight: 500;
   text-align: center;
   color: #396df2;
+  transition: all;
+}
+
+.project-btn:hover {
+  background-color: #6070ff;
+  color: #fff;
 }
 
 /* About */
@@ -401,6 +407,17 @@ textarea {
   color: white;
 }
 
+button.btn {
+  transition: all;
+  transition-duration: 1s;
+}
+
+.btn:hover {
+  background-color: #6070ff;
+  color: white;
+  border: 1px solid white;
+}
+
 /* Media queries */
 @media (min-width: 768px) {
   main {
@@ -527,18 +544,20 @@ textarea {
     align-items: center;
     justify-content: center;
     font-weight: normal;
-    width: 80%;
+    width: 78%;
     height: 450px;
     background-color: #fff;
     border-radius: 50px;
     gap: 20px;
   }
 
-  .texts {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  .shot-img {
+    width: 550px;
+    height: 390px;
+  }
+
+  .shot-img:hover {
+    transform: scale(1.4);
   }
 
   .about-work-card {
@@ -552,7 +571,6 @@ textarea {
     width: 100%;
     margin: 0;
     border-radius: 0;
-    padding-top: 150px;
     height: 700px;
     border-top-right-radius: 70px;
   }
@@ -562,11 +580,36 @@ textarea {
     flex-direction: column;
   }
 
+  .languages {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .languages ul {
+    width: 122px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .framework {
+    border-bottom: 2px #dfe1e6 solid;
+    width: 648px;
+    height: 90px;
+    color: #344563;
+  }
+
+  .skills {
+    border-bottom: 2px #dfe1e6 solid;
+    width: 648px;
+    height: 90px;
+    color: #344563;
+  }
+
   .abt-header {
     font-size: 40px;
     color: #091e42;
-
-    /* margin-left: 20%; */
     text-align: left;
     margin: 20px 20% 20px 20px;
   }
@@ -663,10 +706,19 @@ textarea {
     color: #396df2;
     font-size: 17px;
     line-height: 24px;
+
+    /* transition: all;
+    transition-duration: 2s; */
   }
 
-  .send-btn:hover {
-    background-color: #081d5182;
+  .btn {
+    transition: all;
+    transition-duration: 1s;
+  }
+
+  .btn:hover {
+    background-color: #6070ff;
     color: white;
+    border: 1px solid white;
   }
 }
