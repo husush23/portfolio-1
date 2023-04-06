@@ -500,6 +500,7 @@ textarea {
     color: #7f8cff;
     text-align: left;
     margin-left: 15px;
+    margin-bottom: 10px;
   }
 
   .social-links {
@@ -516,6 +517,8 @@ textarea {
     justify-items: center;
     background-color: #fbf8f8;
     width: 100%;
+    height: 570px;
+    font-family: 'Poppins', sans-serif;
   }
 
   .template {
@@ -529,6 +532,13 @@ textarea {
     background-color: #fff;
     border-radius: 50px;
     gap: 20px;
+  }
+
+  .texts {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .about-work-card {
@@ -617,7 +627,6 @@ textarea {
     margin: 10px 0;
     width: 327px;
     height: 48px;
-    border-radius: 8px;
     border: none;
     border: 1px solid #cfd8dc;
     text-align: left;
@@ -630,12 +639,12 @@ textarea {
   textarea {
     width: 327px;
     height: 170px;
-    border-radius: 8px;
     text-align: left;
     font-size: 17px;
     line-height: 20px;
     font-family: 'Poppins', sans-serif;
     margin-top: 10px;
+    border-radius: 0;
   }
 
   .send-btn {
@@ -647,7 +656,7 @@ textarea {
     justify-content: center;
     border: 1px solid #6070ff;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 20%;
     background-color: white;
     font-weight: 500;
     text-align: center;
