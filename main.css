@@ -407,17 +407,6 @@ textarea {
   color: white;
 }
 
-button.btn {
-  transition: all;
-  transition-duration: 1s;
-}
-
-.btn:hover {
-  background-color: #6070ff;
-  color: white;
-  border: 1px solid white;
-}
-
 /* Media queries */
 @media (min-width: 768px) {
   main {
@@ -554,10 +543,22 @@ button.btn {
   .shot-img {
     width: 550px;
     height: 390px;
+    transition: transform 1s;
   }
 
   .shot-img:hover {
     transform: scale(1.4);
+  }
+
+  .btn {
+    transition: all;
+    transition-duration: 1s;
+  }
+
+  .btn:hover {
+    background-color: #6070ff;
+    color: white;
+    border: 1px solid white;
   }
 
   .about-work-card {
@@ -706,19 +707,5 @@ button.btn {
     color: #396df2;
     font-size: 17px;
     line-height: 24px;
-
-    /* transition: all;
-    transition-duration: 2s; */
-  }
-
-  .btn {
-    transition: all;
-    transition-duration: 1s;
-  }
-
-  .btn:hover {
-    background-color: #6070ff;
-    color: white;
-    border: 1px solid white;
   }
 }
