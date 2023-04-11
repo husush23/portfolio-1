@@ -2,7 +2,7 @@
 
 <!-- TABLE OF CONTENTS -->
 
-# 📗 Table of Contents
+# 📗 Table of Content
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
