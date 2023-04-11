@@ -75,6 +75,11 @@ You can deploy this project using any hosting server in the world
 - GitHub: [@githubhandle](https://github.com/husush23)
 - Twitter: [@twitterhandle](https://twitter.com/HusseinKadare2)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/hussein-kadare-8aa1361a8/)
+  👤 **Author1**
+
+- GitHub: [@githubhandle](https://github.com/husush23)
+- Twitter: [@twitterhandle](https://twitter.com/HusseinKadare2)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/hussein-kadare-8aa1361a8/)
 
 <!-- FUTURE FEATURES -->
 
