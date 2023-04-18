@@ -7,3 +7,9 @@ function openMenu() {
   mobileHam.classList.add('hidden');
   mobileMenu.classList.remove('hidden');
 }
+
+// close menu
+function closeMenu() {
+  mobileHam.classList.remove('hidden');
+  mobileMenu.classList.add('hidden');
+}
