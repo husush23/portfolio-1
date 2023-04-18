@@ -13,6 +13,7 @@
       src="https://kit.fontawesome.com/667d7efdcc.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <main>
@@ -20,21 +21,39 @@
     <header class="header-mobile">
       <nav class="nav">
         <div class="logo"><a href="#"> I'm Hussein</a></div>
-        <div class="menu-d">
+        <div class="menu-d ">
           <ul>
-            <li><a href="#">Portfolio</a></li>
+            <li><a href="#portfolio">Porfolio</a></li>
           </ul>
           <ul>
-            <li><a href="#">About</a></li>
+            <li><a href="#about">About</a></li>
           </ul>
           <ul>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="menu-m">
-          <nav class="btn-hover"><i class="fa-solid fa-bars"></i></nav>
+          <nav class="btn-hover">
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i> 
+          </nav>
         </div>
+        
       </nav>
+      <div class="mobile-menu hidden">
+        <i class="fa-solid fa-xmark fa-2x"onclick="closeMenu()"></i> 
+      
+        <ul class=" items">
+          <li onclick="closeMenu()">
+            <a href="#porfolio" class="menu-item">Portfolio</a>
+          </li>
+          <li onclick="closeMenu()">
+            <a href="#about"  class="menu-item">About</a>
+          </li>
+          <li onclick="closeMenu()">
+            <a href="#contact"  class="menu-item">Contact </a>
+          </li>
+        </ul>
+      </div>
       <section class="introduction">
         <h1 class="greeting-header">
           Hi I'm Hussein.
@@ -52,13 +71,13 @@
           <h3  class="connect-header">LET'S CONNECT</h3>
           <ul class="social-links">
             <li>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://twitter.com/HusseinKadare2"><i class="fa-brands fa-twitter"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://www.linkedin.com/in/hussein-kadare-8aa1361a8/"><i class="fa-brands fa-linkedin-in"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="https://github.com/husush"><i class="fa-brands fa-github"></i></a>
             </li>
             <li>
               <a href="#"><i class="fa-solid fa-m"></i></a>
@@ -71,8 +90,9 @@
       </section>
     </header>
 
-    <section class="work-card">
+    <section class="work-card" id="porfolio">
       <div class="first-template template">
+        <img src="./img/snapshot.png" class="snapshot-1 shot-img"></img>
 
         <div class="texts">
           <h2 class="text-header">Hussein</h2>
@@ -87,9 +107,8 @@
           <ul><li>CSS</li></ul>
           <ul><li>Javasript</li></ul>
         </div>
-        <button class="project-btn btn"> <a href="#">See my projects</a> </button>
+        <button class="project-btn btn" type="submit"> <a href="#">See my projects</a> </button>
         </div>
-        <img src="./img/snapshot.png" class="snapshot-1 shot-img" alt="snapshot1"></img>
 
       </div>
     </section>
@@ -97,7 +116,7 @@
     
     <section class="work-card">
       <div class="second-template template">
-        <img src="./img/snapshot-2.png" class="snapshot-2 shot-img" alt="snapshoot2"></img>
+        <img src="./img/snapshot-2.png" class="snapshot-2 shot-img"></img>
 
         <div class="texts">
           <h2 class="text-header">Multi-Post
@@ -113,7 +132,7 @@
           <ul><li>CSS</li></ul>
           <ul><li>Javasript</li></ul>
         </div>
-        <button class="project-btn btn"> <a href="#">See my projects</a> </button>
+        <button class="project-btn btn" type="submit"> <a href="#">See my projects</a> </button>
         </div>
 
       </div>
@@ -121,6 +140,7 @@
 
     <section class="work-card">
       <div class="third-template template">
+        <img src="./img/snapshot-3.png" class="snapshot-3 shot-img"></img>
 
         <div class="texts">
           <h2 class="text-header">Hussein</h2>
@@ -135,9 +155,8 @@
           <ul><li>CSS</li></ul>
           <ul><li>Javasript</li></ul>
         </div>
-        <button class="project-btn btn" > <a href="#">See my projects</a> </button>
+        <button class="project-btn btn" type="submit"> <a href="#">See my projects</a> </button>
         </div>
-        <img src="./img/snapshot-3.png" class="snapshot-3 shot-img" alt="snapshot3"></img>
 
 
       </div>
@@ -145,7 +164,7 @@
 
     <section class="work-card">
       <div class="fourth-template template">
-        <img src="./img/snapshot-4.png" class="snapshot-4 shot-img" alt="snapshot4"></img>
+        <img src="./img/snapshot-4.png" class="snapshot-4 shot-img"></img>
 
         <div class="texts">
           <h2 class="text-header">Multi-Post
@@ -168,7 +187,7 @@
     </section>
     <!-- About me -->
     <section class="about-work-card ">
-      <div class="about fifth-template template ">
+      <div class="about fifth-template template " id="about">
         <div class="wrapper-1">
 
         <h2 class="abt-header">About my self</h2>
@@ -195,7 +214,7 @@
           </li>
         </ul>
       </div>
-      <button class="project-btn btn"> <a href="#">Get my Resume</a> </button>
+      <button class="project-btn btn" type="submit"> <a href="#">Get my Resume</a> </button>
     </div>
 
     <div class="wrapper-2">
@@ -225,7 +244,7 @@
 
 
 
-  <section class="contact-card">
+  <section class="contact-card" id="contact">
     <div class=" fifth-template  contact ">
       <h2 class="contact-header">Contact me</h2>
     <p class="contact-p">
