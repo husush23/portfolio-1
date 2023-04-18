@@ -59,6 +59,7 @@ a {
   color: #6070ff;
   z-index: 3;
 }
+
 .menu-m {
   display: block;
 }
@@ -66,6 +67,7 @@ a {
 .menu-d {
   display: none;
 }
+
 .hidden {
   display: none;
 }
@@ -73,6 +75,7 @@ a {
 .btn-hover :hover {
   color: #0f24e3;
 }
+
 .mobile-menu {
   position: absolute;
   width: 375px;
@@ -82,6 +85,7 @@ a {
   top: -2%;
   backdrop-filter: blur(6px);
 }
+
 .fa-xmark {
   width: 12px;
   height: 12px;
@@ -91,6 +95,7 @@ a {
   top: 20px;
   right: 20px;
 }
+
 .mobile-menu .items {
   display: flex;
   flex-direction: column;
@@ -102,9 +107,11 @@ a {
   font-size: 32px;
   line-height: 44px;
 }
+
 .menu-item {
   color: #fff;
 }
+
 /* section in header */
 .introduction {
   display: flex;
@@ -498,6 +505,7 @@ button.btn {
   .menu-m {
     display: none;
   }
+
   .mobile-menu {
     display: none;
   }
@@ -589,9 +597,11 @@ button.btn {
     border-radius: 50px;
     gap: 20px;
   }
+
   .snapshot-1 {
     order: 2;
   }
+
   .snapshot-3 {
     order: 2;
   }
