@@ -1,17 +1,17 @@
 const mobileHam = document.querySelector('.menu-m');
 const mobileMenu = document.querySelector('.mobile-menu');
-const elSize = document.querySelector('.introduction');
 
-// Open
 function openMenu() {
   mobileHam.classList.add('hidden');
   mobileMenu.classList.remove('hidden');
 }
-// close menu
+document.querySelector('.btn-hover').addEventListener('click', openMenu);
+
 function closeMenu() {
   mobileHam.classList.remove('hidden');
   mobileMenu.classList.add('hidden');
 }
+mobileMenu.addEventListener('click', closeMenu);
 
 // Create content
 const projects = [
@@ -45,9 +45,9 @@ const projects = [
     id: 2,
     name: 'Multi-Post Stories',
     title1: 'Tonic',
-    title1: 'Tonic',
+    title2: 'Tonic',
     company1: 'CANOPY',
-    company1: 'CANOPY',
+    company2: 'CANOPY',
     specialization1: 'Front End Dev ',
     specialization2: 'Front End Dev ',
     year: '2023',
@@ -121,7 +121,7 @@ const projects = [
   },
 ];
 
-projects.forEach(project => {
+projects.forEach((project) => {
   const section = document.createElement('div');
   section.innerHTML = `
 <section class="work-card">
@@ -154,14 +154,13 @@ projects.forEach(project => {
 
   const seeBtn = document.querySelectorAll('.see-btn');
   const pop = document.querySelector('.pop');
-  const closeBtn = document.querySelector('.close-btns');
 
-  seeBtn.forEach(btn => {
-    btn.addEventListener('click', e => {
-      const {id} = e.target;
+  seeBtn.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      let { id } = e.target;
+      id = Number(id);
 
-      if (id == project.id) {
-        console.log(project.id);
+      if (id === project.id) {
         pop.innerHTML = `
         <div class="pop-up ">
         <div class="upper">
@@ -210,8 +209,9 @@ projects.forEach(project => {
         document.querySelector('.header-mobile').classList.add('overlay');
         sections.classList.add('overlay');
         const closeBtns = document.querySelector('.close-btns');
-        closeBtns.addEventListener('click', e => {
-          pop.innerHTML = ``;
+        closeBtns.addEventListener('click', (e) => {
+          e.preventDefault();
+          pop.innerHTML = '';
           document.querySelector('.header-mobile').classList.remove('overlay');
           sections.classList.remove('overlay');
         });
