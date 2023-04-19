@@ -13,6 +13,114 @@ function closeMenu() {
   mobileMenu.classList.add('hidden');
 }
 
+// Create content
+const projects = [
+  {
+    id: 1,
+    name: 'Tonic',
+    title1: 'Tonic',
+    title2: 'Tonic',
+    company1: 'KADARE',
+    company2: 'KADARE',
+    specialization1: 'Front End Dev ',
+    specialization2: 'Front End Dev ',
+    year: '2016',
+    alignClass: 'one',
+    descrip1:
+      'A daily selection of privately <br class="must-ignor">personalized reads;no accounts or <br class="must-ignor">sign-ups required.',
+    descrip2:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ducimus neque impedit molestias quisquam officiis ipsum illo maiores deserunt, quidem architecto ratione excepturi nisi ipsam praesentium veniam minima unde ullam, eos, eveniet delectus iure repellendus? Quidem omnis quod pariatur dolor.',
+    mobilImg: './img/mob-shot-1.png',
+    deskImg: './img/desk-shot-1.png',
+    live: '#',
+    source: '#',
+    techs: {
+      tech1: 'HTML',
+      tech2: 'CSS',
+      tech3: 'Javascript',
+      tech4: 'Ruby',
+    },
+  },
+  {
+    id: 2,
+    name: 'Multi-Post Stories',
+    title1: 'Tonic',
+    title1: 'Tonic',
+    company1: 'CANOPY',
+    company1: 'CANOPY',
+    specialization1: 'Front End Dev ',
+    specialization2: 'Front End Dev ',
+    year: '2023',
+    descrip1:
+      'A daily selection of privately <br class="must-ignor">personalized reads;no accounts or <br class="must-ignor">sign-ups required.',
+    descrip2:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ducimus neque impedit molestias quisquam officiis ipsum illo maiores deserunt, quidem architecto ratione excepturi nisi ipsam praesentium veniam minima unde ullam, eos, eveniet delectus iure repellendus? Quidem omnis quod pariatur dolor.',
+
+    mobilImg: './img/mob-shot-2.png',
+    deskImg: './img/desk-shot-2.png',
+    live: '#',
+    source: '#',
+    techs: {
+      tech1: 'HTML',
+      tech2: 'CSS',
+      tech3: 'Javascript',
+      tech4: 'Ruby',
+    },
+  },
+  {
+    id: 3,
+    name: 'Multi-Post Stories',
+    title1: 'Tonic',
+    title2: 'Tonic',
+    company1: 'CANOPY',
+    company2: 'CANOPY',
+    specialization1: 'Front End Dev ',
+    specialization2: 'Front End Dev ',
+    year: '2023',
+    descrip1:
+      'A daily selection of privately <br class="must-ignor">personalized reads;no accounts or <br class="must-ignor">sign-ups required.',
+    descrip2:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ducimus neque impedit molestias quisquam officiis ipsum illo maiores deserunt, quidem architecto ratione excepturi nisi ipsam praesentium veniam minima unde ullam, eos, eveniet delectus iure repellendus? Quidem omnis quod pariatur dolor.',
+
+    mobilImg: '/img/mob-shot-3.png',
+    deskImg: '/img/desk-shot-3.png',
+    live: '#',
+    source: '#',
+    techs: {
+      tech1: 'HTML',
+      tech2: 'CSS',
+      tech3: 'Javascript',
+      tech4: 'Ruby',
+    },
+  },
+  {
+    id: 4,
+    name: 'Multi-Post Stories',
+    title1: 'Tonic',
+    title2: 'Tonic',
+    company1: 'CANOPY',
+    company2: 'CANOPY',
+    specialization1: 'Fullstack Dev ',
+    specialization2: 'Fullstack Dev ',
+    year: '2018',
+    descrip1:
+      'A daily selection of privately <br class="must-ignor">personalized reads;no accounts or <br class="must-ignor">sign-ups required.',
+    descrip2:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ducimus neque impedit molestias quisquam officiis ipsum illo maiores deserunt, quidem architecto ratione excepturi nisi ipsam praesentium veniam minima unde ullam, eos, eveniet delectus iure repellendus? Quidem omnis quod pariatur dolor.',
+
+    mobilImg: '/img/mob-shot-4.png',
+    deskImg: '/img/desk-shot-4.png',
+    live: '#',
+    source: '#',
+    techs: {
+      tech1: 'HTML & CSS',
+      tech2: 'Ruby',
+      tech3: 'Javascript',
+      tech4: 'Ruby',
+    },
+  },
+];
+
 projects.forEach(project => {
   const section = document.createElement('div');
   section.innerHTML = `
