@@ -121,7 +121,7 @@ const projects = [
   },
 ];
 
-projects.forEach((project) => {
+projects.forEach(project => {
   const section = document.createElement('div');
   section.innerHTML = `
 <section class="work-card">
@@ -155,9 +155,9 @@ projects.forEach((project) => {
   const seeBtn = document.querySelectorAll('.see-btn');
   const pop = document.querySelector('.pop');
 
-  seeBtn.forEach((btn) => {
-    btn.addEventListener('click', (e) => {
-      let { id } = e.target;
+  seeBtn.forEach(btn => {
+    btn.addEventListener('click', e => {
+      let {id} = e.target;
       id = Number(id);
 
       if (id === project.id) {
@@ -183,7 +183,7 @@ projects.forEach((project) => {
           </div>
         </div>
         <img src="${project.deskImg}" class="pop-img desk-img " alt="">
-        <img src="${project.deskImg}" class="pop-img mobile-img" alt="">
+        <img src="${project.mobilImg}" class="pop-img mobile-img" alt="">
         <div class="wrap">
           <div class="description">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -209,7 +209,7 @@ projects.forEach((project) => {
         document.querySelector('.header-mobile').classList.add('overlay');
         sections.classList.add('overlay');
         const closeBtns = document.querySelector('.close-btns');
-        closeBtns.addEventListener('click', (e) => {
+        closeBtns.addEventListener('click', e => {
           e.preventDefault();
           pop.innerHTML = '';
           document.querySelector('.header-mobile').classList.remove('overlay');
