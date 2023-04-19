@@ -4,93 +4,99 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio </title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/667d7efdcc.js"
       crossorigin="anonymous"
     ></script>
-    <script defer src="script.js"></script>
   </head>
   <body>
     <main>
+      <header class="header-mobile">
+        <nav class="nav">
+          <div class="logo"><a href="#"> I'm Hussein</a></div>
+          <div class="menu-d">
+            <ul>
+              <li><a href="#portfolio">Porfolio</a></li>
+            </ul>
+            <ul>
+              <li><a href="#about">About</a></li>
+            </ul>
+            <ul>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="menu-m">
+            <nav class="btn-hover">
+              <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+          </div>
+        </nav>
+        <div class="mobile-menu hidden">
+          <i class="fa-solid fa-xmark fa-2x" onclick="closeMenu()"></i>
 
-    <header class="header-mobile">
-      <nav class="nav">
-        <div class="logo"><a href="#"> I'm Hussein</a></div>
-        <div class="menu-d ">
-          <ul>
-            <li><a href="#portfolio">Porfolio</a></li>
-          </ul>
-          <ul>
-            <li><a href="#about">About</a></li>
-          </ul>
-          <ul>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="menu-m">
-          <nav class="btn-hover">
-            <i class="fa-solid fa-bars" onclick="openMenu()"></i> 
-          </nav>
-        </div>
-        
-      </nav>
-      <div class="mobile-menu hidden">
-        <i class="fa-solid fa-xmark fa-2x"onclick="closeMenu()"></i> 
-      
-        <ul class=" items">
-          <li onclick="closeMenu()">
-            <a href="#porfolio" class="menu-item">Portfolio</a>
-          </li>
-          <li onclick="closeMenu()">
-            <a href="#about"  class="menu-item">About</a>
-          </li>
-          <li onclick="closeMenu()">
-            <a href="#contact"  class="menu-item">Contact </a>
-          </li>
-        </ul>
-      </div>
-      <section class="introduction">
-        <h1 class="greeting-header">
-          Hi I'm Hussein.
-          <br />
-          Glad to see <br />
-          you
-        </h1>
-        <p class="explain-self">
-          I am a software developer! I can help you build a product , feature or
-          website Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don ot hesitate to contact
-          me.
-        </p>
-        <div class="connection">
-          <h3  class="connect-header">LET'S CONNECT</h3>
-          <ul class="social-links">
-            <li>
-              <a href="https://twitter.com/HusseinKadare2"><i class="fa-brands fa-twitter"></i></a>
+          <ul class="items">
+            <li onclick="closeMenu()">
+              <a href="#porfolio" class="menu-item">Portfolio</a>
             </li>
-            <li>
-              <a href="https://www.linkedin.com/in/hussein-kadare-8aa1361a8/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <li onclick="closeMenu()">
+              <a href="#about" class="menu-item">About</a>
             </li>
-            <li>
-              <a href="https://github.com/husush"><i class="fa-brands fa-github"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-m"></i></a>
-            </li>
-            <li>
-              <a href="#"><img src="./img/Vector.jpg" class="vector" /></a>
+            <li onclick="closeMenu()">
+              <a href="#contact" class="menu-item">Contact </a>
             </li>
           </ul>
         </div>
-      </section>
-    </header>
+        <section class="introduction">
+          <h1 class="greeting-header">
+            Hi I'm Hussein.
+            <br />
+            Glad to see <br />
+            you
+          </h1>
+          <p class="explain-self">
+            I am a software developer! I can help you build a product , feature
+            or website Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don ot hesitate to
+            contact me.
+          </p>
+          <div class="connection">
+            <h3 class="connect-header">LET'S CONNECT</h3>
+            <ul class="social-links">
+              <li>
+                <a href="https://twitter.com/HusseinKadare2"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/hussein-kadare-8aa1361a8/"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/husush"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-m"></i></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/Vector.jpg" class="vector" /></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </header>
 
-    <section class="work-card" id="porfolio">
+      <!-- <section class="work-card" id="porfolio">
       <div class="first-template template">
         <img src="./img/snapshot.png" class="snapshot-1 shot-img"></img>
 
@@ -111,10 +117,9 @@
         </div>
 
       </div>
-    </section>
-    
-    
-    <section class="work-card">
+    </section> -->
+
+      <!-- <section class="work-card">
       <div class="second-template template">
         <img src="./img/snapshot-2.png" class="snapshot-2 shot-img"></img>
 
@@ -136,9 +141,10 @@
         </div>
 
       </div>
-    </section>
+    </section>  -->
 
-    <section class="work-card">
+      <!-- <section class="work-card">
+      
       <div class="third-template template">
         <img src="./img/snapshot-3.png" class="snapshot-3 shot-img"></img>
 
@@ -160,12 +166,16 @@
 
 
       </div>
-    </section>
+    </section> -->
 
-    <section class="work-card">
+      <!-- <section class="work-card">
       <div class="fourth-template template">
-        <img src="./img/snapshot-4.png" class="snapshot-4 shot-img"></img>
-
+        <div class="desk-img">
+        <img src="./img/snapshot-4.png" class="snapshot-4 shot-img "></img>
+        </div>
+        <div class="mobile-img">
+        <img src="./img/snapshot-3.png" class="snapshot-3 shot-img "></img>
+        </div>
         <div class="texts">
           <h2 class="text-header">Multi-Post
             Stories</h2>
@@ -182,93 +192,138 @@
         </div>
         <button class="project-btn btn" type="submit"> <a href="#">See my projects</a> </button>
         </div>
-
       </div>
-    </section>
-    <!-- About me -->
-    <section class="about-work-card ">
-      <div class="about fifth-template template " id="about">
-        <div class="wrapper-1">
+    </section>  -->
 
-        <h2 class="abt-header">About my self</h2>
-      <p class="about-p">
-        Hello I’m a software developer! I can help you build , a product , feature or website. Look through some of  my work and experience! If you like what you see  and have a project you need coded, don’t hesitate to contact me.
-      </p>
-      <div class="connection">
-        <h3  class="connect-header">LET'S CONNECT</h3>
-        <ul class="social-links">
-          <li>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-m"></i></a>
-          </li>
-          <li>
-            <a href="#"><img src="./img/Vector.jpg" class="vector" /></a>
-          </li>
-        </ul>
-      </div>
-      <button class="project-btn btn" type="submit"> <a href="#">Get my Resume</a> </button>
-    </div>
+      <div class="sections body"></div>
 
-    <div class="wrapper-2">
+      <div class="pop"></div>
 
-      <div class="languages-header">
-        <h3>Languages</h3>
-        <ul><li><i class="fa-solid fa-angle-down"></i></li></ul>
-      </div>
-      <div class="languages">
-        <ul><li><img src="./img/html.png" alt="html icon"></li><li>&nbsp;&nbsp; HTML5</li></ul>
-        <ul><li><img src="./img/css.png" alt="css icon"></li><li>&nbsp;&nbsp; CSS</li></ul>
-        <ul><li><img src="./img/js.png" alt="js icon"></li><li>&nbsp;&nbsp; Javascript</li></ul>
-        
-      </div>
-      <div class="framework">
-        <h3>Frameworks</h3>
-        <ul><li><i class="fa-solid fa-angle-down"></i></li></ul>
-      </div>
-      <div class="skills">
-        <h3>Skills</h3>
-        <ul><li><i class="fa-solid fa-angle-down"></i></li></ul>
-      </div>
-    </div>
+      <div class="overlay"></div>
 
-    </div>
-  </section>
+      <section class="about-work-card">
+        <div class="about fifth-template template" id="about">
+          <div class="wrapper-1">
+            <h2 class="abt-header">About my self</h2>
+            <p class="about-p">
+              Hello I’m a software developer! I can help you build , a product ,
+              feature or website. Look through some of my work and experience!
+              If you like what you see and have a project you need coded, don’t
+              hesitate to contact me.
+            </p>
+            <div class="connection">
+              <h3 class="connect-header">LET'S CONNECT</h3>
+              <ul class="social-links">
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-m"></i></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/Vector.jpg" class="vector" /></a>
+                </li>
+              </ul>
+            </div>
+            <button class="project-btn btn" type="submit">
+              <a href="#">Get my Resume</a>
+            </button>
+          </div>
 
+          <div class="wrapper-2">
+            <div class="languages-header">
+              <h3>Languages</h3>
+              <ul>
+                <li><i class="fa-solid fa-angle-down"></i></li>
+              </ul>
+            </div>
+            <div class="languages">
+              <ul>
+                <li><img src="./img/html.png" alt="html icon" /></li>
+                <li>&nbsp;&nbsp; HTML5</li>
+              </ul>
+              <ul>
+                <li><img src="./img/css.png" alt="css icon" /></li>
+                <li>&nbsp;&nbsp; CSS</li>
+              </ul>
+              <ul>
+                <li><img src="./img/js.png" alt="js icon" /></li>
+                <li>&nbsp;&nbsp; Javascript</li>
+              </ul>
+            </div>
+            <div class="framework">
+              <h3>Frameworks</h3>
+              <ul>
+                <li><i class="fa-solid fa-angle-down"></i></li>
+              </ul>
+            </div>
+            <div class="skills">
+              <h3>Skills</h3>
+              <ul>
+                <li><i class="fa-solid fa-angle-down"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="contact-card" id="contact">
+        <div class="fifth-template contact">
+          <h2 class="contact-header">Contact me</h2>
+          <p class="contact-p">
+            Hello I’m a software developer! I can help you build , a product ,
+            feature or website. Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hesitate to contact me.
+          </p>
 
-  <section class="contact-card" id="contact">
-    <div class=" fifth-template  contact ">
-      <h2 class="contact-header">Contact me</h2>
-    <p class="contact-p">
-      Hello I’m a software developer! I can help you build , a product , feature or website. Look through some of  my work and experience! If you like what you see  and have a project you need coded, don’t hesitate to contact me.
-    </p>
-    
-    <form action="https://formspree.io/f/moqzkank" method="POST">
-    <div >
-      <label for="name
-      "></label>
-      <input type="text" name="name" value="" placeholder="Name" class=" input name-input" maxlength="30" required>
-    </div>
-    <div >
-      <label for="email"></label>
-      <input type="email" name="email" placeholder="Name@email.com" class="input email-input" required>
-    </div>
-    <label for="message"></label>
-    <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message here" maxlength="500" required></textarea>
-    <button type="submit" class=" send-btn btn"> Get me in touch </button>
-  </form>
-
-  </div>
-</section>
-</main>
-
+          <form action="https://formspree.io/f/moqzkank" method="POST">
+            <div>
+              <label
+                for="name
+      "
+              ></label>
+              <input
+                type="text"
+                name="name"
+                value=""
+                placeholder="Name"
+                class="input name-input"
+                maxlength="30"
+                required
+              />
+            </div>
+            <div>
+              <label for="email"></label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Name@email.com"
+                class="input email-input"
+                required
+              />
+            </div>
+            <label for="message"></label>
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Write your message here"
+              maxlength="500"
+              required
+            ></textarea>
+            <button type="submit" class="send-btn btn">Get me in touch</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>
