@@ -232,3 +232,22 @@ form.addEventListener('submit', (e) => {
   }
   e.preventDefault();
 });
+const changeEvent = function () {
+  const userName = document.querySelector('.name-input').value;
+  const userEmail = document.querySelector('.email-input').value;
+  const message = document.querySelector('textarea').value;
+  const data = {
+    name: userName,
+    email: userEmail,
+    message,
+  };
+  const jsonData = JSON.stringify(data);
+  localStorage.setItem('data', jsonData);
+};
+const localData = JSON.parse(localStorage.getItem('data'));
+document.querySelector('.name-input').value = localData.name;
+document.querySelector('.email-input').value = localData.email;
+document.querySelector('textarea').value = localData.message;
+
+const sendBtn = document.querySelector('.send-btn');
+sendBtn.addEventListener('change', changeEvent);
