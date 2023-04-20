@@ -244,5 +244,10 @@ const changeEvent = function () {
   const jsonData = JSON.stringify(data);
   localStorage.setItem('data', jsonData);
 };
+const localData = JSON.parse(localStorage.getItem('data'));
+document.querySelector('.name-input').value = localData.name;
+document.querySelector('.email-input').value = localData.email;
+document.querySelector('textarea').value = localData.message;
+
 const sendBtn = document.querySelector('.send-btn');
 sendBtn.addEventListener('change', changeEvent);
