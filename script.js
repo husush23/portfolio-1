@@ -232,3 +232,18 @@ form.addEventListener('submit', (e) => {
   }
   e.preventDefault();
 });
+
+form.addEventListener('submit', e => {
+  // e.preventDefault();
+  const userName = document.querySelector('.name-input').value;
+  const userEmail = document.querySelector('.email-input').value;
+  const message = document.querySelector('textarea').value;
+  let data = {
+    name: userName,
+    email: userEmail,
+    message: message,
+  };
+  const jsonData = JSON.stringify(data);
+  console.log(data);
+  localStorage.setItem('data', jsonData);
+});
