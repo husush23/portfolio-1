@@ -1,17 +1,17 @@
 const mobileHam = document.querySelector('.menu-m');
 const mobileMenu = document.querySelector('.mobile-menu');
+const elSize = document.querySelector('.introduction');
 
+// Open
 function openMenu() {
   mobileHam.classList.add('hidden');
   mobileMenu.classList.remove('hidden');
 }
-document.querySelector('.btn-hover').addEventListener('click', openMenu);
-
+// close menu
 function closeMenu() {
   mobileHam.classList.remove('hidden');
   mobileMenu.classList.add('hidden');
 }
-mobileMenu.addEventListener('click', closeMenu);
 
 // Create content
 const projects = [
@@ -29,7 +29,7 @@ const projects = [
     descrip1:
       'A daily selection of privately <br class="must-ignor">personalized reads;no accounts or <br class="must-ignor">sign-ups required.',
     descrip2:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ducimus neque impedit molestias quisquam officiis ipsum illo maiores deserunt, quidem architecto ratione excepturi nisi .',
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ducimus neque impedit molestias quisquam officiis ipsum illo maiores deserunt, quidem architecto ratione excepturi nisi ipsam praesentium veniam minima unde ullam, eos, eveniet delectus iure repellendus? Quidem omnis quod pariatur dolor.',
     mobilImg: './img/mob-shot-1.png',
     deskImg: './img/desk-shot-1.png',
     live: '#',
@@ -45,9 +45,9 @@ const projects = [
     id: 2,
     name: 'Multi-Post Stories',
     title1: 'Tonic',
-    title2: 'Tonic',
+    title1: 'Tonic',
     company1: 'CANOPY',
-    company2: 'CANOPY',
+    company1: 'CANOPY',
     specialization1: 'Front End Dev ',
     specialization2: 'Front End Dev ',
     year: '2023',
@@ -154,13 +154,14 @@ projects.forEach(project => {
 
   const seeBtn = document.querySelectorAll('.see-btn');
   const pop = document.querySelector('.pop');
+  const closeBtn = document.querySelector('.close-btns');
 
   seeBtn.forEach(btn => {
     btn.addEventListener('click', e => {
-      let {id} = e.target;
-      id = Number(id);
+      const {id} = e.target;
 
-      if (id === project.id) {
+      if (id == project.id) {
+        console.log(project.id);
         pop.innerHTML = `
         <div class="pop-up ">
         <div class="upper">
@@ -183,7 +184,7 @@ projects.forEach(project => {
           </div>
         </div>
         <img src="${project.deskImg}" class="pop-img desk-img " alt="">
-        <img src="${project.mobilImg}" class="pop-img mobile-img" alt="">
+        <img src="${project.deskImg}" class="pop-img mobile-img" alt="">
         <div class="wrap">
           <div class="description">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -210,8 +211,7 @@ projects.forEach(project => {
         sections.classList.add('overlay');
         const closeBtns = document.querySelector('.close-btns');
         closeBtns.addEventListener('click', e => {
-          e.preventDefault();
-          pop.innerHTML = '';
+          pop.innerHTML = ``;
           document.querySelector('.header-mobile').classList.remove('overlay');
           sections.classList.remove('overlay');
         });
