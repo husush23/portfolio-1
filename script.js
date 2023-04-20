@@ -121,7 +121,7 @@ const projects = [
   },
 ];
 
-projects.forEach((project) => {
+projects.forEach(project => {
   const section = document.createElement('div');
   section.innerHTML = `
 <section class="work-card">
@@ -155,9 +155,9 @@ projects.forEach((project) => {
   const seeBtn = document.querySelectorAll('.see-btn');
   const pop = document.querySelector('.pop');
 
-  seeBtn.forEach((btn) => {
-    btn.addEventListener('click', (e) => {
-      let { id } = e.target;
+  seeBtn.forEach(btn => {
+    btn.addEventListener('click', e => {
+      let {id} = e.target;
       id = Number(id);
 
       if (id === project.id) {
@@ -209,7 +209,7 @@ projects.forEach((project) => {
         document.querySelector('.header-mobile').classList.add('overlay');
         sections.classList.add('overlay');
         const closeBtns = document.querySelector('.close-btns');
-        closeBtns.addEventListener('click', (e) => {
+        closeBtns.addEventListener('click', e => {
           e.preventDefault();
           pop.innerHTML = '';
           document.querySelector('.header-mobile').classList.remove('overlay');
@@ -221,7 +221,7 @@ projects.forEach((project) => {
 });
 
 const form = document.forms[0];
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', e => {
   const email = form.elements.email.value;
   const errorMsg = document.querySelector('.error');
   if (email === email.toLowerCase()) {
