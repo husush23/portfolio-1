@@ -571,6 +571,7 @@ button.btn {
   mix-blend-mode: multiply;
   background: #c1c7d0;
 }
+
 .error {
   width: auto;
   height: auto;
@@ -987,6 +988,7 @@ button.btn {
     mix-blend-mode: multiply;
     background: #c1c7d0;
   }
+
   .error {
     background-color: #fff;
     color: red;
