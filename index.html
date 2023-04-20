@@ -197,6 +197,7 @@
                 class="input name-input"
                 maxlength="30"
                 required
+                onchange="changeEvent()"
               />
             </div>
             <div>
@@ -208,6 +209,7 @@
                 class="input email-input"
                 value=""
                 required
+                onchange="changeEvent()"
               />
             </div>
             <label for="message"></label>
@@ -219,6 +221,7 @@
               placeholder="Write your message here"
               maxlength="500"
               required
+              onchange="changeEvent()"
             ></textarea>
             <button type="submit" class="send-btn btn">Get me in touch</button>
             <div class="error hidden">Email must be in lowercase</div>

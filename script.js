@@ -232,9 +232,7 @@ form.addEventListener('submit', (e) => {
   }
   e.preventDefault();
 });
-const sendBtn = document.querySelector('.send-btn');
-sendBtn.addEventListener('click', () => {
-  console.log('hi');
+const changeEvent = function () {
   const userName = document.querySelector('.name-input').value;
   const userEmail = document.querySelector('.email-input').value;
   const message = document.querySelector('textarea').value;
@@ -245,4 +243,6 @@ sendBtn.addEventListener('click', () => {
   };
   const jsonData = JSON.stringify(data);
   localStorage.setItem('data', jsonData);
-});
+};
+const sendBtn = document.querySelector('.send-btn');
+sendBtn.addEventListener('change', changeEvent);
