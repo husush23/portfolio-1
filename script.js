@@ -85,7 +85,7 @@ const projects = [
     mobilImg: '/img/capstone-mob-1.png',
     deskImg: '/img/caps-desk-1.png',
     live: 'https://husush23.github.io/capstone--1/',
-    source: '#',
+    source: 'https://github.com/husush23/awesome-book',
     techs: {
       tech1: 'HTML',
       tech2: 'CSS',
@@ -199,7 +199,7 @@ projects.forEach(project => {
               <ul><li>${project.techs.tech4}</li></ul>
             </div>
             <div class="btns">
-              <button class="project-btn"><a href="#">See source</a> &nbsp;<img src="./img/gitsource.png" alt=""> </button>
+              <button class="project-btn"><a href="${project.source}">See source</a> &nbsp;<img src="./img/gitsource.png" alt=""></button>
               <button class="project-btn"> <a href="${project.live}">See live</a>  &nbsp; <img src="./img/source.svg" alt=""></button>
             </div>
           </div>
