@@ -108,8 +108,8 @@ const projects = [
     descrip2:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ducimus neque impedit molestias quisquam officiis ipsum illo maiores deserunt, quidem architecto ratione excepturi nisi ipsam praesentium veniam minima unde ullam, eos, eveniet delectus iure repellendus? Quidem omnis quod pariatur dolor.',
 
-    mobilImg: '/img/mob-shot-4.png',
-    deskImg: '/img/desk-shot-4.png',
+    mobilImg: '/img/mob-shot-2.png',
+    deskImg: '/img/desk-shot-2.png',
     live: '#',
     source: '#',
     techs: {
@@ -121,7 +121,7 @@ const projects = [
   },
 ];
 
-projects.forEach((project) => {
+projects.forEach(project => {
   const section = document.createElement('div');
   section.innerHTML = `
 <section class="work-card">
@@ -155,9 +155,9 @@ projects.forEach((project) => {
   const seeBtn = document.querySelectorAll('.see-btn');
   const pop = document.querySelector('.pop');
 
-  seeBtn.forEach((btn) => {
-    btn.addEventListener('click', (e) => {
-      let { id } = e.target;
+  seeBtn.forEach(btn => {
+    btn.addEventListener('click', e => {
+      let {id} = e.target;
       id = Number(id);
 
       if (id === project.id) {
@@ -209,7 +209,7 @@ projects.forEach((project) => {
         document.querySelector('.header-mobile').classList.add('overlay');
         sections.classList.add('overlay');
         const closeBtns = document.querySelector('.close-btns');
-        closeBtns.addEventListener('click', (e) => {
+        closeBtns.addEventListener('click', e => {
           e.preventDefault();
           pop.innerHTML = '';
           document.querySelector('.header-mobile').classList.remove('overlay');
@@ -221,7 +221,7 @@ projects.forEach((project) => {
 });
 
 const form = document.forms[0];
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', e => {
   const email = form.elements.email.value;
   const errorMsg = document.querySelector('.error');
   if (email === email.toLowerCase()) {
