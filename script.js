@@ -82,9 +82,9 @@ const projects = [
     descrip2:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ducimus neque impedit molestias quisquam officiis ipsum illo maiores deserunt, quidem architecto ratione excepturi nisi ipsam praesentium veniam minima unde ullam, eos, eveniet delectus iure repellendus? Quidem omnis quod pariatur dolor.',
 
-    mobilImg: '/img/mob-shot-3.png',
-    deskImg: '/img/desk-shot-3.png',
-    live: '#',
+    mobilImg: '/img/capstone-mob-1.png',
+    deskImg: '/img/caps-desk-1.png',
+    live: 'https://husush23.github.io/capstone--1/',
     source: '#',
     techs: {
       tech1: 'HTML',
@@ -121,7 +121,7 @@ const projects = [
   },
 ];
 
-projects.forEach((project) => {
+projects.forEach(project => {
   const section = document.createElement('div');
   section.innerHTML = `
 <section class="work-card">
@@ -155,9 +155,9 @@ projects.forEach((project) => {
   const seeBtn = document.querySelectorAll('.see-btn');
   const pop = document.querySelector('.pop');
 
-  seeBtn.forEach((btn) => {
-    btn.addEventListener('click', (e) => {
-      let { id } = e.target;
+  seeBtn.forEach(btn => {
+    btn.addEventListener('click', e => {
+      let {id} = e.target;
       id = Number(id);
 
       if (id === project.id) {
@@ -199,8 +199,8 @@ projects.forEach((project) => {
               <ul><li>${project.techs.tech4}</li></ul>
             </div>
             <div class="btns">
-              <button class="project-btn">See source &nbsp;<img src="./img/gitsource.png" alt=""> </button>
-              <button class="project-btn">See live&nbsp; <img src="./img/source.svg" alt=""></button>
+              <button class="project-btn"><a href="#">See source</a> &nbsp;<img src="./img/gitsource.png" alt=""> </button>
+              <button class="project-btn"> <a href="${project.live}">See live</a>  &nbsp; <img src="./img/source.svg" alt=""></button>
             </div>
           </div>
         </div>
@@ -209,7 +209,7 @@ projects.forEach((project) => {
         document.querySelector('.header-mobile').classList.add('overlay');
         sections.classList.add('overlay');
         const closeBtns = document.querySelector('.close-btns');
-        closeBtns.addEventListener('click', (e) => {
+        closeBtns.addEventListener('click', e => {
           e.preventDefault();
           pop.innerHTML = '';
           document.querySelector('.header-mobile').classList.remove('overlay');
@@ -221,7 +221,7 @@ projects.forEach((project) => {
 });
 
 const form = document.forms[0];
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', e => {
   const email = form.elements.email.value;
   const errorMsg = document.querySelector('.error');
   if (email === email.toLowerCase()) {
