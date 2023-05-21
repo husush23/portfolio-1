@@ -2,7 +2,7 @@
 
 <!-- TABLE OF CONTENTS -->
 
-# 📗 Table of Contents
+# 📗 Table of Content
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
@@ -71,6 +71,11 @@ You can deploy this project using any hosting server in the world
 ## 👥 Authors <a name="authors">Hussein Hashi</a>
 
 👤 **Author1**
+
+- GitHub: [@githubhandle](https://github.com/husush23)
+- Twitter: [@twitterhandle](https://twitter.com/HusseinKadare2)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/hussein-kadare-8aa1361a8/)
+  👤 **Author1**
 
 - GitHub: [@githubhandle](https://github.com/husush23)
 - Twitter: [@twitterhandle](https://twitter.com/HusseinKadare2)
