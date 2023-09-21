@@ -85,7 +85,7 @@ const projects = [
     mobilImg: '/img/capstone-mob-1.png',
     deskImg: '/img/caps-desk-1.png',
     live: 'https://husush23.github.io/capstone--1/',
-    source: 'https://github.com/husush23/awesome-book',
+    source: 'https://github.com/husush23/capstone--1',
     techs: {
       tech1: 'HTML',
       tech2: 'CSS',
@@ -119,6 +119,32 @@ const projects = [
       tech4: 'Ruby',
     },
   },
+  {
+    id: 5,
+    name: 'Expenses app',
+    title1: 'Expenses',
+    title2: 'Expense',
+    company1: 'Hussein',
+    company2: 'Hussein',
+    specialization1: 'Fulls-tack Dev ',
+    specialization2: 'Fulls-tack Dev ',
+    year: '2023',
+    descrip1:
+      'A daily expense tracker  <br class="must-ignor">personalized reads;it secures your accounts and can save any task you need.',
+    descrip2:
+      'An expensees is an expenditure tracker that can help to know how much you spent. <br> This is for everyone and is free, it is hosted on live, you can check it below link',
+
+    mobilImg: '/img/expense-mob.png',
+    deskImg: '/img/expense-desk.png',
+    live: 'https://expensees-8a12127a5d1f.herokuapp.com/',
+    source: 'https://github.com/husush23/Capstone--5',
+    techs: {
+      tech1: 'Rails',
+      tech2: 'Ruby',
+      tech3: 'Javascript',
+      tech4: 'Ruby',
+    },
+  },
 ];
 
 projects.forEach(project => {
@@ -143,7 +169,7 @@ projects.forEach(project => {
     <ul><li>${project.techs.tech2}</li></ul>
     <ul><li>${project.techs.tech3}</li></ul>
   </div>
-  <button id="${project.id}" class="project-btn btn see-btn" type="submit"> See my projects </button>
+  <button id="${project.id}" class="project-btn btn see-btn" type="submit"> See my project </button>
   </div>
 </div>
 </section>
@@ -186,10 +212,7 @@ projects.forEach(project => {
         <img src="${project.mobilImg}" class="pop-img mobile-img" alt="">
         <div class="wrap">
           <div class="description">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-
-              .</p>
-              <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s</p>
+            <p> ${project.descrip2}</p>
           </div>
           <div class="btn-links">
             <div class="langs">
