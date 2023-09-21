@@ -110,8 +110,8 @@ const projects = [
 
     mobilImg: '/img/forex-mob.png',
     deskImg: '/img/forex-desk.png',
-    live: 'https://expensees-8a12127a5d1f.herokuapp.com/',
-    source: 'https://github.com/husush23/Capstone--5',
+    live: 'https://forex-exchange-viqx.onrender.com/',
+    source: 'https://github.com/husush23/Capstone--3',
     techs: {
       tech1: 'HTML & CSS',
       tech2: 'React',
