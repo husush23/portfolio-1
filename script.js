@@ -16,71 +16,19 @@ mobileMenu.addEventListener('click', closeMenu);
 // Create content
 const projects = [
   {
-    id: 1,
-    name: 'Tonic',
-    title1: 'Tonic',
-    title2: 'Tonic',
-    company1: 'KADARE',
-    company2: 'KADARE',
-    specialization1: 'Front End Dev ',
-    specialization2: 'Front End Dev ',
-    year: '2016',
-    alignClass: 'one',
-    descrip1:
-      'A daily selection of privately <br class="must-ignor">personalized reads;no accounts or <br class="must-ignor">sign-ups required.',
-    descrip2:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ducimus neque impedit molestias quisquam officiis ipsum illo maiores deserunt, quidem architecto ratione excepturi nisi ipsam praesentium veniam minima unde ullam, eos, eveniet delectus iure repellendus? Quidem omnis quod pariatur dolor.',
-    mobilImg: './img/mob-shot-1.png',
-    deskImg: './img/desk-shot-1.png',
-    live: '#',
-    source: '#',
-    techs: {
-      tech1: 'HTML',
-      tech2: 'CSS',
-      tech3: 'Javascript',
-      tech4: 'Ruby',
-    },
-  },
-  {
-    id: 2,
-    name: 'Multi-Post Stories',
-    title1: 'Tonic',
-    title2: 'Tonic',
-    company1: 'CANOPY',
-    company2: 'CANOPY',
-    specialization1: 'Front End Dev ',
-    specialization2: 'Front End Dev ',
-    year: '2023',
-    descrip1:
-      'A daily selection of privately <br class="must-ignor">personalized reads;no accounts or <br class="must-ignor">sign-ups required.',
-    descrip2:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ducimus neque impedit molestias quisquam officiis ipsum illo maiores deserunt, quidem architecto ratione excepturi nisi ipsam praesentium veniam minima unde ullam, eos, eveniet delectus iure repellendus? Quidem omnis quod pariatur dolor.',
-
-    mobilImg: './img/mob-shot-2.png',
-    deskImg: './img/desk-shot-2.png',
-    live: '#',
-    source: '#',
-    techs: {
-      tech1: 'HTML',
-      tech2: 'CSS',
-      tech3: 'Javascript',
-      tech4: 'Ruby',
-    },
-  },
-  {
     id: 3,
-    name: 'Multi-Post Stories',
-    title1: 'Tonic',
-    title2: 'Tonic',
-    company1: 'CANOPY',
-    company2: 'CANOPY',
+    name: 'Gym Seminar',
+    title1: 'Gym web',
+    title2: 'Gym web',
+    company1: 'Hussein',
+    company2: 'Hussein',
     specialization1: 'Front End Dev ',
     specialization2: 'Front End Dev ',
     year: '2023',
     descrip1:
-      'A daily selection of privately <br class="must-ignor">personalized reads;no accounts or <br class="must-ignor">sign-ups required.',
+      'A gym seminar web. This website is aimed for presenting fitness seminar, and it will be shared there a multiple valuable lectures for bodybuilding.',
     descrip2:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ducimus neque impedit molestias quisquam officiis ipsum illo maiores deserunt, quidem architecto ratione excepturi nisi ipsam praesentium veniam minima unde ullam, eos, eveniet delectus iure repellendus? Quidem omnis quod pariatur dolor.',
+      'A gym seminar web. This website is aimed for presenting fitness seminar, and it will be shared there a multiple valuable lectures for bodybuilding. I has good design and it is just a static website which displays the content about this seminar.',
 
     mobilImg: '/img/capstone-mob-1.png',
     deskImg: '/img/caps-desk-1.png',
@@ -141,6 +89,32 @@ const projects = [
     techs: {
       tech1: 'Rails',
       tech2: 'Ruby',
+      tech3: 'Javascript',
+      tech4: 'Ruby',
+    },
+  },
+  {
+    id: 6,
+    name: 'Forex app',
+    title1: 'Forex exchanges',
+    title2: 'Forex',
+    company1: 'Hussein',
+    company2: 'Hussein',
+    specialization1: 'Front-end Dev ',
+    specialization2: 'Fulls-tack Dev ',
+    year: '2023',
+    descrip1:
+      'Forex change app is an small app where you find lates changes and updates about forex market, and you will easily any pair of currencies you may. ',
+    descrip2:
+      'Forex change app is an small app where you find lates changes and updates about forex market, and you will easily any pair of currencies you may. It is much helpful for anyone who may need to change many, either sell or buy, this is good and easy way you can find price between the two currencies you need to change between',
+
+    mobilImg: '/img/forex-mob.png',
+    deskImg: '/img/forex-desk.png',
+    live: 'https://expensees-8a12127a5d1f.herokuapp.com/',
+    source: 'https://github.com/husush23/Capstone--5',
+    techs: {
+      tech1: 'HTML & CSS',
+      tech2: 'React',
       tech3: 'Javascript',
       tech4: 'Ruby',
     },
